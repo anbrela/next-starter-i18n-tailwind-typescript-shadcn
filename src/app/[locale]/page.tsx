@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("");
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
@@ -11,68 +14,42 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    The ultimate starter for building modern web apps
+                    {t("title")}
                   </h1>
                   <section className="my-12">
                     <h2 className="text-3xl font-bold mb-6">
-                      Why Choose Our Starter?
+                      {t("why_choose")}
                     </h2>
                     <ul className="list-disc list-inside space-y-4">
                       <li>
-                        <strong>Next.js</strong>: Leverage the power of Next.js
-                        for server-side rendering, static site generation, and
-                        an optimized React experience.
+                        <strong>{t("nextjs")}</strong>
                       </li>
                       <li>
-                        <strong>Tailwind CSS</strong>: Style your components
-                        quickly with a utility-first CSS framework that promotes
-                        design consistency and rapid development.
+                        <strong>{t("tailwind")}</strong>
                       </li>
                       <li>
-                        <strong>TypeScript</strong>: Ensure type safety and
-                        robust code with TypeScript, reducing errors and
-                        improving code quality.
+                        <strong>{t("typescript")}</strong>
                       </li>
                       <li>
-                        <strong>next-intl</strong>: Seamless
-                        internationalization support to build globally
-                        accessible applications.
+                        <strong>{t("shadcn")}</strong>
                       </li>
                       <li>
-                        <strong>Husky</strong>: Implement Git hooks easily to
-                        automate tasks like linting and testing before commits,
-                        ensuring code quality and consistency.
+                        <strong>{t("next_intl")}</strong>
                       </li>
                       <li>
-                        <strong>ESLint & Prettier</strong>: Keep your code clean
-                        and consistent with integrated linting and formatting
-                        tools.
+                        <strong>{t("husky")}</strong>
                       </li>
                       <li>
-                        <strong>Jest & Testing Library</strong>: Write reliable
-                        and maintainable tests to ensure your application works
-                        as expected.
+                        <strong>{t("eslint")}</strong>
                       </li>
                       <li>
-                        <strong>Clean Architecture</strong>: Organize your
-                        project following clean architecture principles to
-                        ensure scalability, maintainability, and separation of
-                        concerns.
+                        <strong>{t("jest")}</strong>
                       </li>
                       <li>
-                        <strong>Commitlint</strong>: Enforce commit message
-                        conventions to maintain a consistent and clear commit
-                        history.
+                        <strong>{t("clean_architecture")}</strong>
                       </li>
                       <li>
-                        <strong>Storybook</strong>: Develop UI components in
-                        isolation with Storybook, making it easier to design and
-                        document your UI elements.
-                      </li>
-                      <li>
-                        <strong>Webpack & Babel</strong>: Customize your build
-                        process with powerful tools like Webpack and Babel for
-                        optimized asset bundling and transpilation.
+                        <strong>{t("commitlint")}</strong>
                       </li>
                     </ul>
                   </section>
@@ -83,7 +60,7 @@ export default function Home() {
                     className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
-                    View Repository
+                    {t("view_repository")}
                   </Link>
                 </div>
               </div>
@@ -110,14 +87,14 @@ export default function Home() {
             className="text-xs hover:underline underline-offset-4"
             prefetch={false}
           >
-            Terms of Service
+            {t("terms_of_service")}
           </Link>
           <Link
             href="#"
             className="text-xs hover:underline underline-offset-4"
             prefetch={false}
           >
-            Privacy
+            {t("privacy")}
           </Link>
         </nav>
       </footer>
