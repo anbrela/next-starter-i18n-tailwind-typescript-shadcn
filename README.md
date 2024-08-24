@@ -66,7 +66,8 @@ Here's a quick overview of the key files and directories in this starter:
 /src/app: Main application components and pages.
 /src/shared: Shared utilities and constants, like the i18n configuration.
 /config: Configuration files, including ESLint, Tailwind, and others.
-/locales: JSON files for translations, supporting all configured locales.
+/config/locales: JSON files for translations, supporting all configured locales.
 /public: Static assets like images, icons, etc.
 🤝 Contributing
+
 We welcome contributions! Please fork the repository, make your changes, and open a pull request.
