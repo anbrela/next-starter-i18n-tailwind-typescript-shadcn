@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getI18n } from "config/locales/server";
 
-export default function Home() {
-  const t = useTranslations("");
+export default async function Home() {
+  const t = await getI18n();
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -17,38 +17,45 @@ export default function Home() {
                     {t("title")}
                   </h1>
                   <section className="my-12">
-                    <h2 className="text-3xl font-bold mb-6">
-                      {t("why_choose")}
-                    </h2>
                     <ul className="list-disc list-inside space-y-4">
-                      <li>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
                         <strong>{t("nextjs")}</strong>
                       </li>
-                      <li>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
                         <strong>{t("tailwind")}</strong>
                       </li>
-                      <li>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
                         <strong>{t("typescript")}</strong>
                       </li>
-                      <li>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
                         <strong>{t("shadcn")}</strong>
                       </li>
-                      <li>
-                        <strong>{t("next_intl")}</strong>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
+                        <strong>{t("next-international")}</strong>
                       </li>
-                      <li>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
                         <strong>{t("husky")}</strong>
                       </li>
-                      <li>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
                         <strong>{t("eslint")}</strong>
                       </li>
-                      <li>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
                         <strong>{t("jest")}</strong>
                       </li>
-                      <li>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
                         <strong>{t("clean_architecture")}</strong>
                       </li>
-                      <li>
+                      <li className="list-none my-4 flex items-center space-x-2">
+                        <div className="w-4 h-4 border-gray-600 rounded bg-green-200 " />
                         <strong>{t("commitlint")}</strong>
                       </li>
                     </ul>
