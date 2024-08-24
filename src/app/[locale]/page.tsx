@@ -85,7 +85,7 @@ export default function Home() {
                     prefetch={false}
                   >
                     View Repository in githu
-                    wht
+                    wht afs
                   </Link>
 
                 </div>
