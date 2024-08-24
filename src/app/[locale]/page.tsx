@@ -119,7 +119,6 @@ export default function Home() {
             prefetch={false}
           >
 
-            test again
             Privacy
           </Link>
         </nav>
