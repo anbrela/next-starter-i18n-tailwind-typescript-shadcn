@@ -118,6 +118,8 @@ export default function Home() {
             className="text-xs hover:underline underline-offset-4"
             prefetch={false}
           >
+
+            test again
             Privacy
           </Link>
         </nav>
@@ -129,7 +131,7 @@ export default function Home() {
 function MountainIcon(props) {
   return (
     <svg
-    
+
       {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
