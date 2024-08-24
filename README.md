@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🌟 Ultimate Next.js 14 Starter 🌟
+Welcome to the Ultimate Next.js 14 Starter! This is your go-to boilerplate for building modern web applications with the latest and greatest technologies. Whether you're starting a new project or looking to upgrade your stack, this starter kit provides everything you need for a solid foundation.
 
-## Getting Started
+🚀 What's Inside?
+Next.js 14: The cutting-edge of server-side rendering and static site generation with React.
+Tailwind CSS: A utility-first CSS framework that makes styling a breeze.
+TypeScript: Ensure type safety and build reliable, maintainable applications.
+Shadcn: Elegant UI components that are easy to customize and extend.
+next-international: Seamless internationalization with locale-based routing.
+Husky: Automate linting, formatting, and testing with Git hooks.
+ESLint & Prettier: Keep your code clean, consistent, and easy to read.
+Jest & Testing Library: Reliable testing to ensure your app works as expected.
+Clean Architecture: Organize your code for scalability and maintainability.
+Commitlint: Enforce commit message conventions for a consistent and readable Git history.
+🌍 Internationalization with next-international
+With built-in support for multiple locales, this starter kit makes it easy to create globally accessible applications. next-international provides a smooth developer experience with dynamic message loading and robust locale management.
 
-First, run the development server:
+🛠️ Getting Started
+Installation
+Clone the repository and install the dependencies:
 
-```bash
+bash
+Copiar código
+git clone https://github.com/yourusername/ultimate-nextjs-starter.git
+cd ultimate-nextjs-starter
+npm install
+Development
+Run the development server:
+
+bash
+Copiar código
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view it in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Building for Production
+Build your application for production:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+bash
+Copiar código
+npm run build
+Then start the production server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+bash
+Copiar código
+npm start
+Running Tests
+This project uses Jest and Testing Library for unit tests:
 
-## Learn More
+bash
+Copiar código
+npm run test
+Linting and Formatting
+Lint your code with ESLint:
 
-To learn more about Next.js, take a look at the following resources:
+bash
+Copiar código
+npm run lint
+Format your code with Prettier:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+bash
+Copiar código
+npm run format
+📁 Project Structure
+Here's a quick overview of the key files and directories in this starter:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+/src/app: Main application components and pages.
+/src/shared: Shared utilities and constants, like the i18n configuration.
+/config: Configuration files, including ESLint, Tailwind, and others.
+/locales: JSON files for translations, supporting all configured locales.
+/public: Static assets like images, icons, etc.
+🤝 Contributing
+We welcome contributions! Please fork the repository, make your changes, and open a pull request.
